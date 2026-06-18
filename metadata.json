@@ -1,0 +1,17 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "gu7i.dev@gmail.com",
+                "Name": "Guti"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Referencia rápida de comandos y atajos por herramienta",
+        "Icon": "input-keyboard",
+        "Id": "com.guti.devcommands",
+        "Name": "Dev Commands",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
