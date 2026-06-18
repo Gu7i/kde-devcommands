@@ -1,0 +1,13 @@
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# KDE / Qt build artifacts
+*.qmlc
+*.jsc
