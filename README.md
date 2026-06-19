@@ -12,7 +12,7 @@ Same industrial HUD aesthetic as [Code Projects](https://github.com/Gu7i/kde-cod
 
 ## Features
 
-- **8 built-in tabs** — VSCODE · VIM · NVIM · LINUX · DOCKER · GIT · SSH · FFMPEG
+- **9 built-in tabs** — VSCODE · VIM · NVIM · LINUX · DOCKER · GIT · GIT FLOW · SSH · FFMPEG
 - **Click any row** to copy the command/shortcut to the clipboard instantly
 - **Green toast** `✓ COPIADO` confirms the copy for 1.6s
 - **Search** — filter commands within the active tab with `⌕ SRC`
@@ -24,7 +24,7 @@ Same industrial HUD aesthetic as [Code Projects](https://github.com/Gu7i/kde-cod
 ```
 ╔══════════════════════════════════════════════════╗
 ║  ▌▌▌ DEV COMMANDS     TABS   CMDS               ║
-║  PLASMA WIDGET // COMMAND REFERENCE   08   19   ║
+║  PLASMA WIDGET // COMMAND REFERENCE   09   19   ║
 ╠══════════════════════════════════════════════════╣
 ║  [VSCODE] [VIM] [NVIM] [LINUX] [DOCKER] ...  ⌕ ║
 ╠══════════════════════════════════════════════════╣

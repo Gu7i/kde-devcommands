@@ -169,6 +169,32 @@ var TABS = [
         ]
     },
     {
+        id: "gitflow", label: "GIT FLOW",
+        commands: [
+            // ── Tipos de commit (Conventional Commits) ─────────────────────
+            { key: "feat: ",         desc: "Nueva funcionalidad para el usuario" },
+            { key: "fix: ",          desc: "Corrección de un bug" },
+            { key: "refactor: ",     desc: "Refactorización sin cambio de comportamiento" },
+            { key: "chore: ",        desc: "Mantenimiento: deps, build, configs, limpieza" },
+            { key: "docs: ",         desc: "Cambios solo en documentación" },
+            { key: "style: ",        desc: "Formato, espacios, comas (sin lógica)" },
+            { key: "test: ",         desc: "Agregar o corregir tests" },
+            { key: "perf: ",         desc: "Mejora de rendimiento" },
+            { key: "ci: ",           desc: "Cambios en pipelines / workflows de CI" },
+            { key: "build: ",        desc: "Sistema de build o dependencias externas" },
+            { key: "revert: ",       desc: "Revertir un commit anterior" },
+            // ── Breaking change ─────────────────────────────────────────────
+            { key: "feat!: ",        desc: "BREAKING CHANGE: funcionalidad incompatible" },
+            { key: "fix!: ",         desc: "BREAKING CHANGE: fix que rompe compatibilidad" },
+            // ── Ramas ───────────────────────────────────────────────────────
+            { key: "feature/nombre", desc: "Rama para nueva funcionalidad" },
+            { key: "bugfix/nombre",  desc: "Corrección de bug (no urgente)" },
+            { key: "hotfix/nombre",  desc: "Fix urgente directamente sobre producción" },
+            { key: "release/x.y.z",  desc: "Preparación de release (freeze + bumps)" },
+            { key: "chore/nombre",   desc: "Mantenimiento, limpieza, actualizaciones" }
+        ]
+    },
+    {
         id: "ssh", label: "SSH",
         commands: [
             { key: "ssh usuario@host",                         desc: "Conectar al servidor" },
