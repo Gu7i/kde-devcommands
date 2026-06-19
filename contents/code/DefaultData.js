@@ -221,5 +221,48 @@ var TABS = [
             { key: "convert -resize 800x imagen.png salida.png",       desc: "Redimensionar imagen (ImageMagick)" },
             { key: "convert -quality 80 entrada.jpg salida.jpg",       desc: "Comprimir JPEG (ImageMagick)" }
         ]
+    },
+    {
+        id: "regex", label: "REGEX",
+        commands: [
+            // ── Clases de caracteres ────────────────────────────────────────
+            { key: "\\d",                              desc: "Dígito [0-9]" },
+            { key: "\\D",                              desc: "No dígito" },
+            { key: "\\w",                              desc: "Alfanumérico + guión bajo [a-zA-Z0-9_]" },
+            { key: "\\W",                              desc: "No alfanumérico" },
+            { key: "\\s",                              desc: "Espacio en blanco (space, tab, newline)" },
+            { key: "\\S",                              desc: "No espacio en blanco" },
+            { key: "\\b",                              desc: "Límite de palabra (word boundary)" },
+            { key: ".",                                desc: "Cualquier carácter excepto salto de línea" },
+            // ── Cuantificadores ─────────────────────────────────────────────
+            { key: "*",                                desc: "0 o más (greedy)" },
+            { key: "+",                                desc: "1 o más (greedy)" },
+            { key: "?",                                desc: "0 o 1 (opcional)" },
+            { key: "*?",                               desc: "0 o más (lazy / no greedy)" },
+            { key: "+?",                               desc: "1 o más (lazy / no greedy)" },
+            { key: "{n,m}",                            desc: "Entre n y m repeticiones" },
+            // ── Anchors ─────────────────────────────────────────────────────
+            { key: "^",                                desc: "Inicio de línea" },
+            { key: "$",                                desc: "Fin de línea" },
+            // ── Grupos ──────────────────────────────────────────────────────
+            { key: "(abc)",                            desc: "Grupo de captura" },
+            { key: "(?:abc)",                          desc: "Grupo sin captura" },
+            { key: "(?<name>abc)",                     desc: "Grupo con nombre" },
+            { key: "(?=abc)",                          desc: "Lookahead positivo (seguido de abc)" },
+            { key: "(?!abc)",                          desc: "Lookahead negativo (no seguido de abc)" },
+            { key: "(?<=abc)",                         desc: "Lookbehind positivo (precedido de abc)" },
+            { key: "(?<!abc)",                         desc: "Lookbehind negativo (no precedido de abc)" },
+            { key: "a|b",                              desc: "Alternación (a o b)" },
+            // ── Flags ───────────────────────────────────────────────────────
+            { key: "/patrón/gi",                       desc: "Flags: g=global  i=insensible  m=multilinea  s=dotAll" },
+            // ── Patrones comunes ─────────────────────────────────────────────
+            { key: "[\\w.+-]+@[\\w-]+\\.[a-zA-Z]{2,}", desc: "Email" },
+            { key: "https?://[\\w/%#$&?()~.=+-]+",    desc: "URL (http / https)" },
+            { key: "\\b\\d{1,3}(\\.\\d{1,3}){3}\\b",  desc: "Dirección IPv4" },
+            { key: "\\d{4}-\\d{2}-\\d{2}",            desc: "Fecha ISO 8601 (yyyy-mm-dd)" },
+            { key: "#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})\\b", desc: "Color hexadecimal CSS" },
+            { key: "[a-z0-9]+(?:-[a-z0-9]+)*",        desc: "Slug URL (kebab-case)" },
+            { key: "[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}", desc: "UUID v4" }
+        ]
     }
 ]
